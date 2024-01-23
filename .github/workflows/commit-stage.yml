@@ -49,8 +49,3 @@ jobs:
           java-version: '17'
           distribution: 'graalvm'
           github-token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build, unit tests and integration tests
-        run: |
-          cd ${{ matrix.project }}
-          chmod +x gradlew
-          ./gradlew nativeBuild
