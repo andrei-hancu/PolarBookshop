@@ -40,11 +40,6 @@ jobs:
       security-events: write
     strategy:
       fail-fast: false
-      matrix:
-        project: [
-          Chapter16/16-end/quote-service,
-          Chapter16/16-end/quote-function,
-        ]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
